@@ -1,0 +1,324 @@
+/* Afghanistan National Futsal Team - SHARED STYLES */
+/* VARIABLES */
+
+:root {
+  /* Brand Colors */
+
+  --color-primary: #2343a4;
+  --color-primary-dark: #1d72d4;
+  --color-secondary: #007a36;
+
+  /* Dark Theme */
+
+  --color-background: #0d0d0f;
+  --color-surface: #161618;
+  --color-surface-dark: #111113;
+  --color-surface-hover: #1d1d20;
+
+  /* Text */
+
+  --color-text: #f4f4f5;
+  --color-muted: #9ca3af;
+  --color-white: #ffffff;
+
+  /* Border */
+
+  --color-border: #29292e;
+
+  /* Typography */
+
+  --font-heading: "Oswald", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-hero: 3rem;
+
+  /* Spacing */
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+
+  /* Border Radius */
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.45);
+
+  /* Layout */
+
+  --container-width: 1200px;
+}
+
+/* GLOBAL STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  color: var(--color-text);
+  background-color: var(--color-background);
+
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.6;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
+/* Images */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* NAVIGATION */
+nav {
+  padding: var(--space-md);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--color-primary);
+}
+
+/* Logo */
+
+.logo-and-text {
+  display: flex;
+  align-items: center;
+
+  gap: var(--space-md);
+}
+
+.logo {
+  height: 70px;
+}
+
+.nav-text {
+  margin: 0;
+
+  color: var(--color-white);
+
+  font-family: var(--font-body);
+  font-size: var(--text-xl);
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Navigation Menu */
+
+.menu {
+  margin-right: var(--space-md);
+
+  display: flex;
+
+  gap: var(--space-md);
+}
+
+.menu a {
+  padding: var(--space-sm) var(--space-md);
+
+  color: var(--color-white);
+  background-color: var(--color-primary-dark);
+
+  font-weight: 600;
+  text-decoration: none;
+
+  border-radius: var(--radius-md);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.menu a:hover,
+.menu a:active {
+  color: var(--color-primary);
+  background-color: var(--color-white);
+}
+
+/* FOOTER */
+
+footer {
+  padding: var(--space-2xl) var(--space-xl);
+
+  color: var(--color-white);
+  background-color: var(--color-surface-dark);
+
+  border-top: 1px solid var(--color-border);
+}
+
+/* Footer Title */
+
+.footer-texts {
+  margin-bottom: var(--space-md);
+
+  text-align: center;
+}
+
+.footer-title {
+  margin-bottom: var(--space-sm);
+
+  font-size: var(--text-xl);
+  font-weight: 700;
+}
+
+.footer-subtitle {
+  margin-bottom: var(--space-lg);
+
+  color: var(--color-muted);
+
+  font-size: var(--text-lg);
+  font-weight: 400;
+}
+
+/* Footer Links */
+
+.quick-links,
+.follow-us {
+  margin-bottom: var(--space-lg);
+
+  display: flex;
+  justify-content: center;
+
+  gap: var(--space-lg);
+}
+
+.quick-links a,
+.follow-us a {
+  color: var(--color-muted);
+
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover,
+.follow-us a:hover {
+  color: var(--color-primary);
+}
+
+/* Footer Divider */
+
+.footer-line {
+  margin-bottom: var(--space-lg);
+}
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 0;
+
+  background-color: var(--color-border);
+
+  border: none;
+}
+
+/* Copyright */
+
+.footer-last-text {
+  margin: 0;
+
+  color: var(--color-muted);
+
+  text-align: center;
+  font-size: var(--text-sm);
+}
+
+/* SHARED RESPONSIVE STYLES */
+
+@media (max-width: 750px) {
+  /* Navigation */
+
+  nav {
+    flex-direction: column;
+
+    gap: var(--space-md);
+  }
+
+  .logo-and-text {
+    justify-content: center;
+  }
+
+  .menu {
+    margin-right: 0;
+
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Footer */
+
+  .quick-links,
+  .follow-us {
+    flex-wrap: wrap;
+
+    gap: var(--space-md);
+  }
+}
+
+@media (max-width: 500px) {
+  /* Navigation */
+
+  .logo {
+    height: 55px;
+  }
+
+  .nav-text {
+    font-size: var(--text-lg);
+  }
+
+  .menu {
+    gap: var(--space-sm);
+  }
+
+  .menu a {
+    padding: var(--space-sm);
+    font-size: var(--text-sm);
+  }
+
+  /* Footer */
+
+  footer {
+    padding: var(--space-xl) var(--space-md);
+  }
+}

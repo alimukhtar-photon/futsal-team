@@ -1,0 +1,396 @@
+/* UPCOMING PAGE */
+
+.upcoming-page {
+  padding-bottom: var(--space-4xl);
+}
+
+/* Page Heading */
+.upcoming-heading {
+  padding: var(--space-3xl) var(--space-xl);
+
+  text-align: center;
+}
+
+.upcoming-heading p {
+  margin-bottom: var(--space-sm);
+
+  color: var(--color-primary);
+
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.upcoming-heading h1 {
+  margin-bottom: var(--space-sm);
+
+  font-size: var(--text-hero);
+  text-transform: uppercase;
+}
+
+.upcoming-heading span {
+  color: var(--color-muted);
+}
+
+/* Featured Match */
+
+.featured-match {
+  max-width: 1000px;
+
+  margin: 0 auto;
+  padding: var(--space-xl);
+
+  background-color: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-md);
+}
+
+.match-label {
+  margin-top: 0;
+  margin-bottom: var(--space-xl);
+
+  color: var(--color-primary);
+
+  text-align: center;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+/* Featured Teams */
+
+.featured-teams {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  gap: var(--space-xl);
+}
+
+.featured-team {
+  width: 250px;
+
+  text-align: center;
+}
+
+.featured-team img {
+  width: 130px;
+  height: 130px;
+
+  margin: 0 auto var(--space-md);
+
+  object-fit: contain;
+}
+
+.featured-team h2 {
+  margin-bottom: var(--space-xs);
+}
+
+.featured-team p {
+  margin: 0;
+
+  color: var(--color-muted);
+}
+
+/* Match Information */
+
+.featured-match-info {
+  text-align: center;
+}
+
+.match-date {
+  color: var(--color-muted);
+
+  font-weight: 600;
+}
+
+.versus {
+  margin: var(--space-md) 0;
+
+  color: var(--color-primary);
+
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.match-time {
+  margin-bottom: var(--space-xs);
+
+  font-size: var(--text-xl);
+  font-weight: 700;
+}
+
+.match-location {
+  margin-top: 0;
+
+  color: var(--color-muted);
+
+  font-size: var(--text-sm);
+}
+
+/* Competition Message */
+
+.match-message {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-md);
+
+  text-align: center;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.match-message p {
+  margin: 0;
+
+  color: var(--color-muted);
+}
+
+/* Match Details
+-------------------------------------------------- */
+
+.match-details {
+  max-width: 1000px;
+
+  margin: var(--space-lg) auto var(--space-4xl);
+
+  display: flex;
+
+  background-color: var(--color-primary);
+
+  border-radius: var(--radius-md);
+}
+
+.match-detail {
+  width: 25%;
+
+  padding: var(--space-lg);
+
+  text-align: center;
+}
+
+.match-detail span {
+  color: var(--color-white);
+
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.match-detail h3 {
+  margin: var(--space-xs) 0 0;
+
+  color: var(--color-white);
+
+  font-size: var(--text-base);
+}
+
+/* Fixtures
+-------------------------------------------------- */
+
+.fixtures-section {
+  max-width: 1000px;
+
+  margin: auto;
+}
+
+.fixtures-heading {
+  margin-bottom: var(--space-xl);
+}
+
+.fixtures-heading p {
+  margin-bottom: var(--space-xs);
+
+  color: var(--color-primary);
+
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.fixtures-heading h2 {
+  margin: 0;
+
+  font-size: var(--text-2xl);
+  text-transform: uppercase;
+}
+
+/* Fixture */
+
+.fixture {
+  margin-bottom: var(--space-md);
+
+  padding: var(--space-md) var(--space-lg);
+
+  display: flex;
+  align-items: center;
+
+  background-color: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  transition: 0.3s;
+}
+
+.fixture:hover {
+  background-color: var(--color-surface-hover);
+
+  border-color: var(--color-primary);
+}
+
+/* Fixture Date */
+
+.fixture-date {
+  width: 90px;
+
+  text-align: center;
+
+  border-right: 1px solid var(--color-border);
+}
+
+.fixture-date span {
+  display: block;
+
+  color: var(--color-primary);
+
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+}
+
+.fixture-date p {
+  margin: 0;
+
+  color: var(--color-muted);
+
+  font-size: var(--text-sm);
+}
+
+/* Fixture Teams */
+
+.fixture-teams {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: var(--space-lg);
+}
+
+.fixture-teams p {
+  margin: 0;
+
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.fixture-teams span {
+  color: var(--color-primary);
+
+  font-weight: 700;
+}
+
+/* Fixture Time and Location */
+
+.fixture-info {
+  width: 180px;
+
+  padding-left: var(--space-lg);
+
+  text-align: right;
+
+  border-left: 1px solid var(--color-border);
+}
+
+.fixture-info p {
+  margin: 0;
+
+  font-weight: 700;
+}
+
+.fixture-info span {
+  color: var(--color-muted);
+
+  font-size: var(--text-sm);
+}
+
+/* Responsive
+-------------------------------------------------- */
+
+@media (max-width: 700px) {
+  .featured-match {
+    margin-left: var(--space-md);
+    margin-right: var(--space-md);
+  }
+
+  .featured-teams {
+    flex-direction: column;
+  }
+
+  .match-details {
+    margin-left: var(--space-md);
+    margin-right: var(--space-md);
+
+    flex-wrap: wrap;
+  }
+
+  .match-detail {
+    width: 50%;
+  }
+
+  .fixtures-section {
+    padding: 0 var(--space-md);
+  }
+
+  .fixture {
+    gap: var(--space-md);
+  }
+
+  .fixture-teams {
+    flex-direction: column;
+
+    gap: var(--space-xs);
+  }
+
+  .fixture-info {
+    width: 120px;
+  }
+}
+
+@media (max-width: 500px) {
+  .upcoming-heading {
+    padding: var(--space-2xl) var(--space-md);
+  }
+
+  .featured-match {
+    padding: var(--space-lg);
+  }
+
+  .match-detail {
+    width: 100%;
+  }
+
+  .fixture {
+    flex-wrap: wrap;
+  }
+
+  .fixture-date {
+    width: 70px;
+  }
+
+  .fixture-info {
+    width: 100%;
+
+    padding-top: var(--space-md);
+    padding-left: 0;
+
+    text-align: center;
+
+    border-left: none;
+    border-top: 1px solid var(--color-border);
+  }
+}
